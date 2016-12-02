@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app" ngsf-fullscreen="fullScreenCtrl">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <style>/*[ng-cloak]{display:none !important;}*/</style>
+
+
+
+
+</head>
+<body ng-controller="bodyCtrl" ng-class="{'asideHide':toggleMenu}">
+<div class="loader">
+    <div class="load-wrap">
+    <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+        <circle class="circle" fill="none" stroke-width="3" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+    </svg>
+    </div>
+</div>
+<div class="hInherit" style="position:relative;display:block;overflow-x:hidden;" ui-view id="root-ui"></div>
+
+<script src="./js/jquery.min.js"></script>
+
+
+<!--AngularJS-->
+<script src="./angular/angular.min.js"></script>
+<script src="./angular/angular-ui-router.min.js"></script>
+
+<script src="./angular/ocLazyLoad.min.js"></script>
+<script src="./angular/angular-cookies.min.js"></script>
+<script src="./angular/angular-animate.min.js"></script>
+<script src="./angular/angular-messages.min.js"></script>
+<script src="./angular/angular-screenfull.min.js"></script>
+<script src="./angular/ui-bootstrap-tpls-2.0.2.min.js"></script>
+
+<script src="app/app.js"></script>
+<script src="app/config.js"></script>
+
+<script src="app/directives.js"></script>
+<script src="app/factory.js"></script>
+<script src="app/modules/auth.js"></script>
+
+</body>
+</html>
